@@ -1,0 +1,92 @@
+/* Element Selector */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ID Selector */
+#home {
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+#about {
+    background-color: #f0f8ff;
+    padding: 0 20px ;
+
+}
+
+#services {
+    background-color: #f0f8ff;
+    padding: 0 20px ;
+}
+#contact {
+    background-color: #f0f8ff;
+    padding: 0 50px ;
+}
+
+
+/* Attribute Selector */
+a[href^="mailto"] {
+    color: red;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: blue;
+}
+
+/* Pseudo-element Selector */
+p::first-line {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Additional styling for visual appeal */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #099119;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer p {
+    background: #099119;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+}

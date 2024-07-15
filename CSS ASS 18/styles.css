@@ -1,0 +1,84 @@
+:root {
+    /* Colors */
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f0f0f0;
+
+    /* Font */
+    --font-family: Arial, sans-serif;
+    --font-size: 16px;
+
+    /* Spacing */
+    --container-padding: 20px;
+    --form-spacing: 10px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: var(--container-padding);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: var(--form-spacing);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--text-color);
+    margin-bottom: var(--form-spacing);
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: var(--form-spacing);
+    transition: border-color 0.3s ease;
+    width: calc(100% - 22px); /* Adjust for padding and border */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}

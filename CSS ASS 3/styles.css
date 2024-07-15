@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.typography-demo {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.font-family-sans-serif {
+    font-family: 'Arial', sans-serif;
+}
+.font-family-serif {
+    font-family: 'Georgia', serif;
+}
+.font-family-monospace {
+    font-family: 'Courier New', monospace;
+}
+.font-size-large {
+    font-size: 2em;
+}
+.font-size-small {
+    font-size: 0.8em;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.font-weight-light {
+    font-weight: 300;
+}
+.font-style-italic {
+    font-style: italic;
+}
+.font-style-normal {
+    font-style: normal;
+}
+.line-height-loose {
+    line-height: 1.8;
+}
+.line-height-tight {
+    line-height: 1.2;
+}
+.text-transform-uppercase {
+    text-transform: uppercase;
+}
+.text-transform-lowercase {
+    text-transform: lowercase;
+}
+.text-transform-capitalize {
+    text-transform: capitalize;
+}

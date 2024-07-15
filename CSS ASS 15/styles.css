@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1, h2 {
+    margin: 0.5em 0;
+}
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.box:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+/* Transforms */
+.box.translate {
+    transform: translateX(50px);
+}
+.box.rotate {
+    transform: rotate(45deg);
+}
+.box.scale {
+    transform: scale(1.5);
+}
+.box.skew {
+    transform: skew(20deg, 20deg);
+}
+.box.combined {
+    transform: translateX(50px) rotate(45deg) scale(1.2) skew(20deg, 20deg);
+}

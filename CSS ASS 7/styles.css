@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+text-align: center;
+margin-bottom: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 200px 100px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+.grid-item {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.header {
+    grid-column: 1 / 4;
+}
+.sidebar {
+    grid-row: 2 / 4;
+}
+.content {
+    grid-column: 2 / 4;
+}
+.footer {
+    grid-column: 1 / 4;
+}

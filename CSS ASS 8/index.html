@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex CSS Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'footer footer footer';
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-gap: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            grid-area: header;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .content {
+            grid-area: content;
+            display: grid;
+            grid-template-areas:
+                'article article aside'
+                'article article aside';
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10px;
+        }
+        .article {
+            grid-area: article;
+            background-color: #ff6347;
+        }
+        .aside {
+            grid-area: aside;
+            background-color: #ffdab9;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Complex Grid Layout</h1>
+    </header>
+
+    <div class="grid-container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item content">
+            <div class="grid-item article">Article</div>
+            <div class="grid-item aside">Aside</div>
+        </div>
+        <div class="grid-item footer">Footer</div>
+    </div>
+
+</body>
+</html>

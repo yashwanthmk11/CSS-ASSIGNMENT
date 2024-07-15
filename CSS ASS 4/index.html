@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>CSS Box Model Demo</h1>
+
+    <div class="box-model-demo">
+        <h2>Content Box Model</h2>
+        <div class="content-box">
+            This box uses the 'content-box' model.
+        </div>
+        <p>In the 'content-box' model, the width and height of the element apply to the content only. Padding, border, and margin are added outside of the width and height of the content.</p>
+    </div>
+
+    <div class="box-model-demo">
+        <h2>Border Box Model</h2>
+        <div class="border-box">
+            This box uses the 'border-box' model.
+        </div>
+        <p>In the 'border-box' model, the width and height of the element include the content, padding, and border. Margin is added outside of the width and height of the border.</p>
+    </div>
+
+    <div class="box-model-demo box-container">
+        <div class="content-box">
+            <h3>Content Box</h3>
+            <p>This box uses the 'content-box' model.</p>
+        </div>
+        <div class="border-box">
+            <h3>Border Box</h3>
+            <p>This box uses the 'border-box' model.</p>
+        </div>
+    </div>
+
+</body>
+</html>

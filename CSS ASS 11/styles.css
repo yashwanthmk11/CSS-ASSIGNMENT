@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    margin-bottom: 50px;
+}
+.box {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+}
+.static-box {
+    position: static;
+}
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #ff6347;
+}
+.absolute-container {
+    position: relative;
+    height: 200px;
+    background-color: #f4f4f4;
+}
+.absolute-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #32cd32;
+}
+.fixed-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4500;
+}
+.sticky-box {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #ffa500;
+}

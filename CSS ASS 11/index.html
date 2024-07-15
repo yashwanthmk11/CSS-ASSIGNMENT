@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            margin-bottom: 50px;
+        }
+        .box {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+        }
+        .static-box {
+            position: static;
+        }
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #ff6347;
+        }
+        .absolute-container {
+            position: relative;
+            height: 200px;
+            background-color: #f4f4f4;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #32cd32;
+        }
+        .fixed-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff4500;
+        }
+        .sticky-box {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSS Positioning Demo</h1>
+    </header>
+
+    <div class="container">
+        <h2>Static Positioning (Default)</h2>
+        <div class="box static-box">This is a static box. It's positioned according to the normal flow of the document.</div>
+    </div>
+
+    <div class="container">
+        <h2>Relative Positioning</h2>
+        <div class="box relative-box">This is a relative box. It's positioned relative to its normal position.</div>
+    </div>
+
+    <div class="container absolute-container">
+        <h2>Absolute Positioning</h2>
+        <div class="box absolute-box">This is an absolute box. It's positioned relative to the nearest positioned ancestor.</div>
+    </div>
+
+    <div class="container">
+        <h2>Fixed Positioning</h2>
+        <div class="box fixed-box">This is a fixed box. It's positioned relative to the viewport and remains fixed when scrolling.</div>
+    </div>
+
+    <div class="container">
+        <h2>Sticky Positioning</h2>
+        <div class="box sticky-box">This is a sticky box. It sticks to the top of the container when you scroll past it.</div>
+        <p>Scroll down to see the sticky effect.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+        <p>Quisque ultricies, sem eu efficitur ultricies, nisi quam ultricies ligula, nec dapibus augue nulla non nisi.</p>
+        <p>Vestibulum et venenatis justo. Nulla facilisi.</p>
+    </div>
+
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+
+</body>
+</html>

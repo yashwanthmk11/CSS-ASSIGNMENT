@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.color-demo {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+.text-color {
+    color: #ff6347; /* Tomato color */
+}
+.background-color {
+    background-color: #87ceeb; /* Sky blue color */
+    padding: 20px;
+    color: #fff; /* White text */
+}
+.gradient-background {
+    background: linear-gradient(to right, #ff7f50, #1e90ff); /* Coral to DodgerBlue gradient */
+    padding: 20px;
+    color: #fff; /* White text */
+}
+.background-image {
+    background-image: url('https://via.placeholder.com/600x200');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    color: #fff;
+}

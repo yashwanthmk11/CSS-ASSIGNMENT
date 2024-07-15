@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Images with srcset</h1>
+    </header>
+
+    <div class="container">
+        <h2>Beautiful Landscape</h2>
+        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720915200&semt=sph"
+             srcset="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720915200&semt=sph 600w,
+             https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720915200&semt=sph 1000w,
+             https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720915200&semt=sph 1200w"
+             sizes="(max-width: 600px) 100vw,
+                    (max-width: 1000px) 50vw,
+                    33vw"
+             alt="A beautiful landscape">
+    </div>
+
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+
+</body>
+</html>
